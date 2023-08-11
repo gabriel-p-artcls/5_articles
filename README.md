@@ -14,6 +14,7 @@ Haffner 14, Ruprecht 41, Ruprecht 42, Ruprecht 44, Ruprecht 152.
 1. [Parallax](#parallax)
 1. [Extinction](#extinction)
 1. [ASteCA](#asteca)
+1. [Possible analysis](#possible-analysis)
 
 <!-- /MarkdownTOC -->
 
@@ -135,14 +136,22 @@ Ruprecht 152: median=0.754, min=0.726, max=0.784
 
 Nine runs were performed:
 
-1. `G vs BP-RP, b_fr=0.0`
-2. `G vs BP-RP, b_fr=0.3`
-3. `G vs BP-RP, b_fr=free`
-4. `V vs U-B, b_fr=0.0`
-5. `V vs U-B, b_fr=0.3`
-6. `V vs U-B, b_fr=free`
+1. `V vs B-V vs U-B, b_fr=0.0`
+2. `V vs B-V vs U-B, b_fr=0.3`
+3. `V vs B-V vs U-B, b_fr=free`
+
+4. `G vs BP-RP, b_fr=0.0`
+5. `G vs BP-RP, b_fr=0.3`
+6. `G vs BP-RP, b_fr=free`
+
 7. `G vs U-B, b_fr=0.0`
 8. `G vs U-B, b_fr=0.3`
 9. `G vs U-B, b_fr=free`
 
+
 The results are stored in the `final_params.dat` file.
+
+
+## Possible analysis
+
+See: [Photometric study of the young open clusters IC 1442, King 21, and Trumpler 7, Maurya & Gour (2020)](https://academic.oup.com/mnras/article/495/2/2496/5838760#204257844)

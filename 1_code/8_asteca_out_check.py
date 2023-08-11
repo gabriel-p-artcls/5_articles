@@ -11,7 +11,7 @@ analyzed CMDs and binary fractions
 in_folder = '../2_pipeline/8_ASteCA/'
 out_folder = '../2_pipeline/8_ASteCA/tmp/'
 
-data = ascii.read(in_folder + 'final_params.dat')
+data = ascii.read(in_folder + 'asteca_output.dat')
 data.sort('NAME')
 
 labels = list(set([_.split('_')[0] for _ in data['NAME']]))
@@ -26,7 +26,7 @@ cc = {1: u'#1f77b4', 2: u'#ff7f0e', 3: u'#2ca02c', 4: u'#d62728',
 
 def parPlot(data, par):
     for cl in data:
-        name, run = cl['NAME'].split('_')
+        run, name = cl['NAME'].split('/')
         x = xx[name]
         xoffset = (int(run) - 5) / 12.
         x, y = x + xoffset, cl['{}_median'.format(par)]
